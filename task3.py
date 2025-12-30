@@ -8,7 +8,7 @@ print(df.head())
 print(df.shape)
 print(df.info())
 print(df.describe())
-#print(df.isnull().sum())
+print(df.isnull().sum())
 
 #right skewed indicating large proportion of low to mid priced cars and small proportion of high priced cars
 sns.histplot(df["Selling_Price"], kde=True, color="teal")
